@@ -1,0 +1,19 @@
+1. Include the typefaces:
+    Figure out which one aligns best with the brand that you're building for.
+
+2. Define the scale or the different font sizes to use.
+    Recommended: use a modular typograhic scale.
+    Tools to use to generate one: Archetype
+
+3. Recommended: use tokens for the various font sizes to use. 
+    Avoid the use of hard coded values for font sizes on different elements.
+
+4. Recommended: Create tokens for the font weights.
+
+5. Don't for get the assessibility part for typography.
+    Always use font size bigger than 16px
+    Don't use upper case letters for the entire body text: It's super hard to read
+    Use the appropriate line height for your text, because visually impaired people have a hard time reading text with 100% line height
+    or with very large or very big line heights, like 200 or 250%
+
+6. Colors should be accessible: Use the correct contrast there.

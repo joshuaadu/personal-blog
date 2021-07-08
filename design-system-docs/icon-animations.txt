@@ -1,0 +1,20 @@
+When using icons it's important to document their:
+    style
+    size
+    the context they are being used.
+    Consider transitions to apply to icons. (Material Design)
+Document the list of resources or sets.
+
+Other documentations to keep things consistent:
+    1. Animation Properties
+    2. Shadows
+    3. Grid systems
+    4. Breakpoints
+
+Write appropriate documentations on how to use those components in what context, best practices
+
+
+
+
+Resource form Introduction to Design Systems | Free Course:
+https://www.youtube.com/watch?v=xEuBCUngJ_U

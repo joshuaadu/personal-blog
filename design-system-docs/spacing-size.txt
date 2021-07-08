@@ -1,0 +1,6 @@
+Sizing:
+
+Its a good idea to use some sort of grid system or scale to define measurements.
+Preferably, use the 8-point system: define units and multiples of 8.
+8-point systems: prevent half pixels in measurements, there avoid anti-aliasing blur
+Sizing scale: using a ratio

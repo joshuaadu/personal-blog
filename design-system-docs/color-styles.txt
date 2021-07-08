@@ -1,0 +1,10 @@
+/_ Primary colors: Displayed most frequently and are usually tied to the brand _/
+/_ Secondary colors: Accent colors, not used frequently _/
+/_ Tints & shade: Variations for primay aor secondary colors _/
+/_ Neutrals and Greys: for text and backgrounds _/
+/_ Semantic colors: Usually re, green, yellow, and blue; For preference, use various shades and tints to make them match your project_/
+/_ Layout Colors: Borders, header, footers, containers, etc _/
+
+/_ UI Colors: Text, buttons, forms _/
+
+/_ Semantic Colors: Success, Danger/error, warning, information_/
