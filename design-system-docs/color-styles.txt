@@ -8,3 +8,14 @@
 /_ UI Colors: Text, buttons, forms _/
 
 /_ Semantic Colors: Success, Danger/error, warning, information_/
+
+
+A Simple Web Developer’s Color Guide: smashingmagazine.com/2016/04/web-developer-guide-color/
+    Creating A Cohesive Color Palette
+    (If you can create a website using only these five colors, you’ll get a much better result than if you were to go overboard with complementaries, split-complementaries, triads and the rest.)
+
+        1. Base color: Brand color or color to be most used
+        
+        2. Accent color: Your accent color will be used in very small amounts on your website, usually as a call to action. So, it needs to stand out.
+
+        3. Neutrals: white, dark gray, light gray(optional)
