@@ -1,4 +1,3 @@
-/* Color Palette */
 :root {
 	--primary-color: #c7d2ff;
 	--accent-color: #e7771e;
@@ -15,7 +14,7 @@ body {
 }
 
 .body--wrapper {
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 	background: var(--light-gray-color);
 }
