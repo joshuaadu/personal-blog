@@ -26,7 +26,7 @@ body {
 	/* font-size: 16px; */
 }
 .body--wrapper {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	/* padding: 1px; */
 
@@ -39,13 +39,19 @@ nav ul {
 	display: flex;
 	justify-content: space-between;
 	gap: 0.2em;
-	margin: 0;
 	padding: 0.5em;
 }
-nav ul li {
+nav ul,
+section ul {
+	margin: 0;
+}
+nav ul li,
+section ul li {
 	list-style: none;
 }
-.navbar--link {
+.navbar--link,
+.recent-post--link,
+.blog-category--link {
 	text-decoration: none;
 	color: var(--dark-gray-color);
 }
@@ -88,8 +94,107 @@ nav ul li {
 	border-radius: 0.2em;
 }
 
+/* Main Content */
+main {
+	margin-top: 2.5em;
+}
+main h3,
+main p {
+	margin: 0;
+}
+.blog-post--article {
+	margin-top: 2em;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.5em;
+	align-items: center;
+	border-bottom: 1px solid var(--dark-gray-color);
+}
+.blog-post--img {
+	width: 100%;
+}
+.blog-post--article p,
+.about--section p {
+	padding: 0 0.5em 0.5em;
+}
+
+/* Sider Bar */
+aside {
+	margin-top: 1.5em;
+}
+aside section {
+	margin-bottom: 0.8em;
+}
+section ul {
+	padding: 0;
+	align-self: start;
+	padding: 0 0.5em 0.5em;
+}
+/* .aside--content {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.5em;
+	align-items: center;
+} */
+
+.about--section,
+.recent-post--section,
+.categories--section {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.5em;
+	align-items: center;
+}
+aside section h3 {
+	margin: auto;
+	width: max-content;
+	border-bottom: 1px solid var(--dark-gray-color);
+}
+
+/* Footer */
+footer {
+	padding: 1em 0.5em;
+}
+
 @media screen and (max-width: 480px) {
 	body {
 		background: yellow;
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.body--wrapper {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"header"
+			"content"
+			"content"
+			"content"
+			"footer";
+	}
+
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: content;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.6em;
+	}
+	.blog--section {
+		grid-column: span 2 / 3;
+		display: grid;
+	}
+	.aside--content {
+		grid-column: 3;
+	}
+	footer {
+		grid-area: footer;
 	}
 }
