@@ -184,12 +184,28 @@ footer {
 	main {
 		grid-area: content;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 0.6em;
+		display: flex;
 	}
 	.blog--section {
+		flex: 1 0 70%;
 		grid-column: span 2 / 3;
 		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"featured-blog  featured-blog"
+			"blog1          blog2";
+		gap: 0.5em;
+		margin-right: 0.8em;
+	}
+	.featured-blog {
+		grid-area: featured-blog;
+		width: 100%;
+	}
+	.blog1 {
+		grid-area: blog1;
+	}
+	.blog2 {
+		grid-area: blog2;
 	}
 	.aside--content {
 		grid-column: 3;
