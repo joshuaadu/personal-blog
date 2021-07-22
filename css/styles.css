@@ -10,14 +10,17 @@
 	--early-bird: #cea2fd;
 	--medium-purple-3: #8968cd;
 }
+
 html {
 	box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -25,6 +28,7 @@ body {
 	font-family: "Barlow", sans-serif;
 	/* font-size: 16px; */
 }
+
 .body--wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -41,20 +45,24 @@ nav ul {
 	gap: 0.2em;
 	padding: 0.5em;
 }
+
 nav ul,
 section ul {
 	margin: 0;
 }
+
 nav ul li,
 section ul li {
 	list-style: none;
 }
+
 .navbar--link,
 .recent-post--link,
 .blog-category--link {
 	text-decoration: none;
 	color: var(--dark-gray-color);
 }
+
 .navbar {
 	width: 50%;
 	margin: 0 auto;
@@ -66,14 +74,19 @@ section ul li {
 	text-align: center;
 	width: 100%;
 }
+
 .hero--img--section {
 	background: url(../assests/love-learn.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 	/* font-size: 0.6em; */
 	/* color: var(--light-gray-color); */
 	padding: 3em 0.5em;
+	display: flex;
+	align-items: center;
 }
+
 .hero--intro {
 	/* padding: 20px; */
 	width: 80%;
@@ -86,6 +99,7 @@ section ul li {
 .hero--intro-text {
 	margin: 0;
 }
+
 .hero--into-button {
 	margin: 0.5em;
 	background-color: var(--dark-gray-color);
@@ -98,10 +112,12 @@ section ul li {
 main {
 	margin-top: 2.5em;
 }
+
 main h3,
 main p {
 	margin: 0;
 }
+
 .blog-post--article {
 	margin-top: 2em;
 	display: flex;
@@ -110,9 +126,11 @@ main p {
 	align-items: center;
 	border-bottom: 1px solid var(--dark-gray-color);
 }
+
 .blog-post--img {
 	width: 100%;
 }
+
 .blog-post--article p,
 .about--section p {
 	padding: 0 0.5em 0.5em;
@@ -122,14 +140,17 @@ main p {
 aside {
 	margin-top: 1.5em;
 }
+
 aside section {
 	margin-bottom: 0.8em;
 }
+
 section ul {
 	padding: 0;
 	align-self: start;
 	padding: 0 0.5em 0.5em;
 }
+
 /* .aside--content {
 	display: flex;
 	flex-flow: column nowrap;
@@ -146,6 +167,7 @@ section ul {
 	gap: 0.5em;
 	align-items: center;
 }
+
 aside section h3 {
 	margin: auto;
 	width: max-content;
@@ -158,6 +180,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
 	body {
 		background: yellow;
 		font-size: 12px;
@@ -165,8 +188,10 @@ footer {
 }
 
 @media screen and (min-width: 481px) {
+
 	.body--wrapper {
-		width: 100%;
+		width: 70%;
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-areas:
@@ -181,11 +206,20 @@ footer {
 		grid-area: header;
 	}
 
+	.hero--img--section {
+		height: 40vh;
+	}
+
+	.hero--intro{
+		padding: 2em;
+	}
+
 	main {
 		grid-area: content;
 		display: grid;
 		display: flex;
 	}
+
 	.blog--section {
 		flex: 1 0 70%;
 		grid-column: span 2 / 3;
@@ -197,19 +231,24 @@ footer {
 		gap: 0.5em;
 		margin-right: 0.8em;
 	}
+
 	.featured-blog {
 		grid-area: featured-blog;
 		width: 100%;
 	}
+
 	.blog1 {
 		grid-area: blog1;
 	}
+
 	.blog2 {
 		grid-area: blog2;
 	}
+
 	.aside--content {
 		grid-column: 3;
 	}
+
 	footer {
 		grid-area: footer;
 	}
