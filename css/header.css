@@ -1,0 +1,89 @@
+/* Header styles */
+/* Navigation bar */
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.2em;
+	padding: 0.5em;
+}
+
+nav ul,
+section ul {
+	margin: 0;
+}
+
+nav ul li,
+section ul li {
+	list-style: none;
+}
+
+.navbar--link,
+.recent-post--link,
+.blog-category--link {
+	text-decoration: none;
+	color: var(--dark-gray-color);
+}
+
+.navbar {
+	width: 50%;
+	margin: 0 auto;
+	border-bottom: 1px solid var(--dark-gray-color);
+}
+
+/* Hero Section */
+.hero--section {
+	text-align: center;
+	width: 100%;
+}
+
+.hero--img--section {
+	background: url(../assests/love-learn.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* font-size: 0.6em; */
+	/* color: var(--light-gray-color); */
+	padding: 3em 0.5em;
+	display: flex;
+	align-items: center;
+}
+
+.hero--intro {
+	/* padding: 20px; */
+	width: 80%;
+	margin: 0 auto;
+	padding: 0.8em;
+	background-color: var(--primary-color);
+	opacity: 0.9;
+}
+
+.hero--intro-text {
+	margin: 0;
+}
+
+.hero--into-button {
+	margin: 0.5em;
+	background-color: var(--dark-gray-color);
+	color: var(--light-gray-color);
+	border: 1px solid var(--dark-gray-color);
+	border-radius: 0.2em;
+}
+
+.blog--hero--img {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-image: none;
+}
+
+.blog--hero--img img {
+	flex: 1 1 30vh;
+}
+
+.Blog--hero--title {
+	border-bottom: 2px solid var(--dark-gray-color);
+}
