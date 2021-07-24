@@ -3,6 +3,7 @@
 @import url(./main-content.css);
 @import url(./sidebar.css);
 @import url(./footer.css);
+@import url(./media-queries.css);
 
 :root {
 	--primary-color: #c7d2ff;
@@ -33,6 +34,10 @@ body {
 	/* font-size: 16px; */
 }
 
+img {
+	width: 100%;
+}
+
 .body--wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -40,17 +45,14 @@ body {
 
 	background: var(--light-gray-color);
 }
-img {
-	width: 100%;
+
+.blog--article--content:first-child::first-letter {
+	color: var(--primary-color);
+	font-size: 2em;
+	font-weight: 700;
 }
 
-@media screen and (max-width: 480px) {
-	body {
-		background: yellow;
-		font-size: 12px;
-	}
-}
-
+/* Layout styles for screen bigger than mobile */
 @media screen and (min-width: 481px) {
 	.body--wrapper {
 		width: 60%;
@@ -117,9 +119,6 @@ img {
 		padding-bottom: 1em;
 	}
 
-	.blog--article--content:first-child::first-letter {
-		color: var(--primary-color);
-	}
 
 	.aside--content {
 		grid-column: 3;
@@ -129,12 +128,15 @@ img {
 		grid-area: footer;
 	}
 }
-
+ 
+/* Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.body--wrapper {
 		width: 75%;
 	}
 }
+
+/* iPads, Tablets. */
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.body--wrapper {
 		width: 85%;
