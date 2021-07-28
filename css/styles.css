@@ -3,11 +3,9 @@
 @import url(./main-content.css);
 @import url(./sidebar.css);
 @import url(./footer.css);
-<<<<<<< HEAD
 @import url(./color.css);
-=======
+
 @import url(./media-queries.css);
->>>>>>> 3811df773696a8d5e404b97b2406a6d3447e1faa
 
 /* :root {
 	--primary-color: #c7d2ff;
@@ -47,27 +45,19 @@ img {
 	margin: 0 auto;
 	/* padding: 1px; */
 
-	/* background: var(--light-gray-color); */
+	background: var(--light-gray-color);
 }
-<<<<<<< HEAD
 img {
 	width: 100%;
 }
-.card {
+/* .card {
 	background: var(--light-gray-color);
-}
+} */
 @media screen and (max-width: 480px) {
 	body {
 		background: yellow;
 		font-size: 12px;
 	}
-=======
-
-.blog--article--content:first-child::first-letter {
-	color: var(--primary-color);
-	font-size: 2em;
-	font-weight: 700;
->>>>>>> 3811df773696a8d5e404b97b2406a6d3447e1faa
 }
 
 /* Layout styles for screen bigger than mobile */
@@ -137,7 +127,6 @@ img {
 		padding-bottom: 1em;
 	}
 
-
 	.aside--content {
 		grid-column: 3;
 	}
@@ -146,7 +135,7 @@ img {
 		grid-area: footer;
 	}
 }
- 
+
 /* Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.body--wrapper {
