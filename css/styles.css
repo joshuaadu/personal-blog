@@ -3,7 +3,11 @@
 @import url(./main-content.css);
 @import url(./sidebar.css);
 @import url(./footer.css);
+<<<<<<< HEAD
 @import url(./color.css);
+=======
+@import url(./media-queries.css);
+>>>>>>> 3811df773696a8d5e404b97b2406a6d3447e1faa
 
 /* :root {
 	--primary-color: #c7d2ff;
@@ -34,6 +38,10 @@ body {
 	/* font-size: 16px; */
 }
 
+img {
+	width: 100%;
+}
+
 .body--wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -41,6 +49,7 @@ body {
 
 	/* background: var(--light-gray-color); */
 }
+<<<<<<< HEAD
 img {
 	width: 100%;
 }
@@ -52,8 +61,16 @@ img {
 		background: yellow;
 		font-size: 12px;
 	}
+=======
+
+.blog--article--content:first-child::first-letter {
+	color: var(--primary-color);
+	font-size: 2em;
+	font-weight: 700;
+>>>>>>> 3811df773696a8d5e404b97b2406a6d3447e1faa
 }
 
+/* Layout styles for screen bigger than mobile */
 @media screen and (min-width: 481px) {
 	.body--wrapper {
 		width: 60%;
@@ -120,9 +137,6 @@ img {
 		padding-bottom: 1em;
 	}
 
-	.blog--article--content:first-child::first-letter {
-		color: var(--primary-color);
-	}
 
 	.aside--content {
 		grid-column: 3;
@@ -132,12 +146,15 @@ img {
 		grid-area: footer;
 	}
 }
-
+ 
+/* Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.body--wrapper {
 		width: 75%;
 	}
 }
+
+/* iPads, Tablets. */
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.body--wrapper {
 		width: 85%;
