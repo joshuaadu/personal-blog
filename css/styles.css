@@ -3,8 +3,9 @@
 @import url(./main-content.css);
 @import url(./sidebar.css);
 @import url(./footer.css);
+@import url(./color.css);
 
-:root {
+/* :root {
 	--primary-color: #c7d2ff;
 	--accent-color: #e7771e;
 	--dark-gray-color: #181836;
@@ -13,7 +14,7 @@
 	--mountains-majesty: #9078c0;
 	--early-bird: #cea2fd;
 	--medium-purple-3: #8968cd;
-}
+} */
 
 html {
 	box-sizing: border-box;
@@ -38,12 +39,14 @@ body {
 	margin: 0 auto;
 	/* padding: 1px; */
 
-	background: var(--light-gray-color);
+	/* background: var(--light-gray-color); */
 }
 img {
 	width: 100%;
 }
-
+.card {
+	background: var(--light-gray-color);
+}
 @media screen and (max-width: 480px) {
 	body {
 		background: yellow;

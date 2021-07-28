@@ -3,19 +3,20 @@
 	--primary-color: #c7d2ff;
 	--accent-color: #e7771e;
 	--dark-gray-color: #181836;
-	--light-gray-color: #f9fbfb;
+	--light-gray-color: #eff3f3;
 	--periwinkle-purple: #be93e4;
 	--mountains-majesty: #9078c0;
 	--early-bird: #cea2fd;
 	--medium-purple-3: #8968cd;
 }
-
-body {
-	width: 100%;
+.navbar--link:hover,
+.navbar--link:active,
+.recent-post--link:hover,
+.blog-category--link:hover,
+.blog-post--article a:hover {
+	color: var(--primary-color);
+	background-color: var(--accent-color);
 }
-
-.body--wrapper {
-	width: 50%;
-	margin: 0 auto;
-	background: var(--light-gray-color);
+.navbar--link:hover {
+	padding: 0.5em;
 }
