@@ -71,3 +71,7 @@ aside section h3 {
 i:nth-child(2n) {
 	border-radius: 0%;
 }
+
+.author-info__span {
+	font-weight: bold;
+}

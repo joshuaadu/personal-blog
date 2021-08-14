@@ -7,6 +7,11 @@ main h3,
 main p {
 	margin: 0;
 }
+
+figure {
+	margin: 0;
+}
+
 section a {
 	text-decoration: none;
 	color: inherit;
